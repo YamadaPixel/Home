@@ -1,0 +1,155 @@
+body {
+  background-color: rgb(255, 255, 255);
+  user-select: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 0px 40px 0px 20px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  display: flex;
+}
+select {
+  font-family: "Kiwi Maru", sans-serif;
+  text-align-last: center;
+  color: rgba(0, 0, 0, 0.600);
+  border-radius: 6px;
+  padding: 6px 20px 6px 20px;
+  background-color: rgb(255, 255, 255);
+  appearance: none;
+  width: 100px;
+}
+select:focus {
+  outline: none;
+}
+.main_title {
+  font-family: "Kiwi Maru", sans-serif;
+  color: rgba(0, 0, 0, 0.700);
+  font-size: 30px;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.header-space {
+  height: 90px;
+}
+p {
+  font-family: "Kiwi Maru", sans-serif;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 50px;
+  color: rgb(0, 0, 0, 0.600);
+  padding-left: 2em;
+}
+h1 {
+  font-family: "Kiwi Maru", sans-serif;
+  font-size: 30px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  border-color: rgba(0, 0, 0, 0.400);
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: rgb(0, 0, 0, 0.600);
+  text-indent: 0.5em;
+}
+h2 {
+  font-family: "Kiwi Maru",sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+  color: rgb(0, 0, 0, 0.600);
+	text-indent: 1em;
+}
+.fullkopi{
+  display: flex;
+}
+.area {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.down {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  min-width: none;
+}
+.up {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.group:not(botton){
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+.up input {
+  font-family: 'Kiwi Maru', sans-serif;
+  padding: 10px 12px;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.800);
+  border-radius: 4px;
+  font-size: 14px;
+  flex: 1;
+  min-width: 0px;
+}
+.up button {
+  font-family: 'Kiwi Maru', sans-serif;
+  padding: 10px 24px;
+  background-color: rgba(0, 0, 0, 0.200);
+  color: rgba(0, 0, 0, 0.600);
+  border: 1px solid rgba(0, 0, 0, 0.600);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  flex: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(0, 0, 0, 0.400);
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+  font-family: 'Kiwi Maru', sans-serif;
+  overflow: hidden;
+  padding: 0px;
+}
+th, td {
+  border: 1px solid rgba(0, 0, 0, 0.600);
+  padding: 12px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.600);
+}
+th {
+  background-color: rgba(0, 0, 0, 0.200);
+  color: rgba(0, 0, 0, 0.600);
+  text-align: center;
+}
+tr:not(:has(th)):hover {
+  background-color: rgba(0, 0, 0, 0.200);
+}

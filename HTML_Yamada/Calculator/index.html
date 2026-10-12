@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamada Calculator</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="../Website/index.html"><img src="icon.png" width="70px" height="70px" class="icon"></a>
+        <a href="../Website/index.html" class="main_title">Yamada</a>
+      </div>
+      <select onchange="location.href=value">
+        <option value="">メニュー</option>
+        <option value="../Website/index.html">ホームページ</option>
+        <option value="../FavoriteThings/index.html">好きなもの紹介</option>
+        <option value="../DataBase/index.html">データベース</option>
+      </select>
+    </header>
+    <div class="header-space"></div>
+    <table>
+      <tr>
+        <td><input type="button" value="7" onclick="get_calc(this)"></td>
+        <td><input type="button" value="8" onclick="get_calc(this)"></td>
+        <td><input type="button" value="9" onclick="get_calc(this)"></td>
+        <td><input type="button" value="÷" onclick="get_calc(this)"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="get_calc(this)"></td>
+        <td><input type="button" value="5" onclick="get_calc(this)"></td>
+        <td><input type="button" value="6" onclick="get_calc(this)"></td>
+        <td><input type="button" value="×" onclick="get_calc(this)"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="get_calc(this)"></td>
+        <td><input type="button" value="2" onclick="get_calc(this)"></td>
+        <td><input type="button" value="3" onclick="get_calc(this)"></td>
+        <td><input type="button" value="-" onclick="get_calc(this)"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="get_calc(this)"></td>
+        <td><input type="button" value="AC" onclick="get_calc(this)"></td>
+        <td><input type="button" value="=" onclick="get_calc(this)"></td>
+        <td><input type="button" value="+" onclick="get_calc(this)"></td>
+      </tr>
+      <tr>
+        <td colspan="4"><input type="text" value="" id="result" class="display" disabled></td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
